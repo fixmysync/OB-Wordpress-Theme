@@ -1,0 +1,21 @@
+@media (max-width: 1000px) {
+  #wpadminbar { border-left:10px solid red !important; }
+  
+  .section {
+    padding:10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #wpadminbar { border-left:10px solid green !important; }
+
+  .left, .sidebar {
+    width:100%;
+    clear:both;
+  }
+
+}
+
+@media (max-width: 480px) {
+  #wpadminbar { border-left:10px solid yellow !important; }
+}

@@ -1,0 +1,645 @@
+@charset "UTF-8";
+/* =============================================================================
+                   Oyster Boy Custom Theme - © 2014 MandyMadeThis.com 
+   ========================================================================== */
+/*THIS IS NORMALIZED*/
+/* line 2, _normalize.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+/* line 2, _normalize.scss */
+audio, canvas, video {
+  display: inline-block;
+}
+
+/* line 2, _normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 2, _normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 2, _normalize.scss */
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 2, _normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/* line 2, _normalize.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 2, _normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 2, _normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 2, _normalize.scss */
+b, strong {
+  font-weight: 700;
+}
+
+/* line 2, _normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 2, _normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 2, _normalize.scss */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 2, _normalize.scss */
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 2, _normalize.scss */
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+/* line 2, _normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 2, _normalize.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 2, _normalize.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 2, _normalize.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 2, _normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 2, _normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 2, _normalize.scss */
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+/* line 2, _normalize.scss */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+/* line 2, _normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 3, _normalize.scss */
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 3, _normalize.scss */
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+/* line 3, _normalize.scss */
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 3, _normalize.scss */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 3, _normalize.scss */
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 3, _normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 3, _normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 3, _normalize.scss */
+body, figure {
+  margin: 0;
+}
+
+/* line 3, _normalize.scss */
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 6, _normalize.scss */
+* {
+  -moz-box-sizing: border-box;
+  /*border box*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, _normalize.scss */
+.clearfix:after {
+  /*clearfix*/
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 18, _normalize.scss */
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE6 */
+/* line 19, _normalize.scss */
+*:first-child + html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+/* line 23, _normalize.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 2, _base.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #3D3D3D;
+  font-size: 17px;
+  line-height: 27px;
+  background: #a1c9d6;
+  text-align: center;
+}
+
+/* line 11, _base.scss */
+::selection {
+  background: #a1c9d6;
+}
+
+/* line 12, _base.scss */
+::-moz-selection {
+  background: #a1c9d6;
+}
+
+/* line 14, _base.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lobster', Georgia, Times, serif;
+  margin: 20px 0;
+}
+
+/* line 19, _base.scss */
+h1 {
+  font-size: 60px;
+  line-height: 70px;
+}
+
+/* line 25, _base.scss */
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+/* line 30, _base.scss */
+h3 {
+  font-size: 28px;
+  line-height: 35px;
+}
+
+/* line 36, _base.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 41, _base.scss */
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* line 46, _base.scss */
+a:hover {
+  color: #a1c9d6;
+}
+
+/* line 47, _base.scss */
+a:active {
+  color: #a1c9d6;
+}
+
+/* line 51, _base.scss */
+body.admin-bar nav {
+  top: 30px;
+}
+
+/* line 55, _base.scss */
+nav {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 0;
+}
+/* line 64, _base.scss */
+nav ul.menu {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+/* line 69, _base.scss */
+nav ul.menu li {
+  text-transform: uppercase;
+  display: inline;
+  padding: 0 40px 0 0;
+}
+/* line 74, _base.scss */
+nav ul.menu li:last-child {
+  padding-right: 0px;
+}
+/* line 78, _base.scss */
+nav ul.menu li a {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* line 82, _base.scss */
+nav ul.menu li a:hover {
+  color: #a1c9d6;
+}
+
+/* line 94, _base.scss */
+div.home {
+  background-image: url("images/oysters-header.jpg");
+  background-size: cover;
+  height: 550px;
+  padding: 150px 100px;
+}
+
+/* line 101, _base.scss */
+.logo {
+  max-width: 550px;
+  margin: 0 auto;
+  background: url("images/logo-500.png"), rgba(255, 255, 255, 0.6);
+  background-repeat: no-repeat;
+  background-position: 50% 10px;
+  text-align: center;
+}
+/* line 109, _base.scss */
+.logo p {
+  padding: 220px 0 0 0;
+  /*This gives space below the logo image and the contact info and it gets rid of the 40px padding of the left, from the browser*/
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* line 116, _base.scss */
+.logo a {
+  color: black;
+  text-decoration: none;
+}
+/* line 121, _base.scss */
+.logo img {
+  padding: 0 7px;
+}
+/* line 124, _base.scss */
+.logo img:first-child {
+  padding-left: 0;
+}
+
+/* line 132, _base.scss */
+.introWrapper {
+  background: #fffff2;
+}
+
+/* line 136, _base.scss */
+.innerWrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1% 0;
+}
+
+/* line 145, _base.scss */
+.poleroid img {
+  /*This gives an image a poleroid effect*/
+  border: 10px solid #fffff2;
+  border-bottom: 45px solid #fffff2;
+  vertical-align: middle;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+/* line 152, _base.scss */
+.poleroid p {
+  /*this is the caption on the poleriod effect*/
+  color: black;
+  font-family: 'Lobster', Georgia, Times, serif;
+  margin: -40px 0 35px 0;
+  font-size: 16px;
+}
+
+/* line 160, _base.scss */
+.leftCopy {
+  float: left;
+  max-width: 69%;
+  margin-right: 1%;
+}
+/* line 165, _base.scss */
+.leftCopy p {
+  text-align: left;
+}
+
+/* line 171, _base.scss */
+.rightMediaBox {
+  float: left;
+  max-width: 30%;
+}
+/* line 175, _base.scss */
+.rightMediaBox.poleroid {
+  margin: 5%;
+}
+
+/* line 182, _base.scss */
+.spacer1Wrapper {
+  height: 300px;
+  background: url(images/spacer1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+/* line 189, _base.scss */
+.about {
+  background: #3f525b;
+  color: #fffff2;
+}
+
+/* line 196, _base.scss */
+.wood {
+  background: url("images/wood.jpg") repeat-x fixed, #896b4c;
+  padding: 35px 0 50px 0;
+}
+
+/* line 201, _base.scss */
+.food-menu {
+  max-width: 950px;
+  background: #fffff2 url(images/paper.jpg);
+  margin: 0 auto;
+  padding: 3%;
+  box-shadow: 0px 2px 2px -2px rgba(0, 0, 0, 0.15), 0px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+/* line 209, _base.scss */
+.food-menu h1 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 25px;
+}
+/* line 214, _base.scss */
+.food-menu h2, .food-menu h3 {
+  margin-top: 2em;
+  font-size: 28px;
+  line-height: 35px;
+}
+/* line 220, _base.scss */
+.food-menu:first-of-type {
+  margin-top: -0.75em;
+}
+/* line 224, _base.scss */
+.food-menu strong {
+  font-family: 'Lobster', Georgia, Times, serif;
+}
+/* line 228, _base.scss */
+.food-menu p {
+  margin: .7em 0;
+}
+
+/* line 234, _base.scss */
+.spacer2Wrapper {
+  background: url("images/lobster.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+@media all and (max-width: 1275px) {
+  /* line 234, _base.scss */
+  .spacer2Wrapper {
+    background-size: contain;
+  }
+}
+
+/* line 246, _base.scss */
+#eventsWrapper {
+  background: #a1c9d6;
+  padding: 25px 5%;
+}
+
+/* line 251, _base.scss */
+.half {
+  float: left;
+  max-width: 49.5%;
+  margin-right: 0.5%;
+}
+/* line 256, _base.scss */
+.half header {
+  max-width: 100%;
+  background: #fffff2;
+}
+
+/* line 264, _base.scss */
+.circle {
+  /*I had to look online to see how to do this circle with the inner boarder in it*/
+  display: inline-block;
+  background: #fffff2;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* line 271, _base.scss */
+.events {
+  /* This is the inner border of the circle */
+  margin: 0 auto;
+  padding: 12%;
+  border: 1px solid #3f525b;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 284, _base.scss */
+.form {
+  /* Contact 7 Forms
+  --------------------------------------------- */
+}
+/* line 287, _base.scss */
+.form .contact-form {
+  background: #fffff2;
+  width: 100%;
+  border: 1px solid #3f525b;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 20px;
+  text-align: center;
+}
+/* line 297, _base.scss */
+.form .contact-form input.text {
+  border: 1px solid #3f525b;
+  font-size: 16px;
+  padding: 2%;
+  border-radius: 6px;
+  margin: 0;
+  background: #fffff2;
+}
+/* line 306, _base.scss */
+.form .contact-form input.text:focus {
+  border: 1px solid #3f525b;
+  outline: none;
+  background: #fffff2;
+}
+/* line 313, _base.scss */
+.form .contact-form textarea.text {
+  border: 1px solid #3f525b;
+  font-size: 16px;
+  padding: 2%;
+  border-radius: 6px;
+  margin: 0;
+  background: #fffff2;
+}
+/* line 324, _base.scss */
+.form .contact-form textarea.text:focus, .form .contact-form input[type="text"]:focus {
+  outline: none;
+  background: #fffff2;
+}
+/* line 330, _base.scss */
+.form .contact-form input[type="submit"] {
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  background: #3f525b;
+  color: #fffff2;
+  font-weight: bold;
+  padding: 3%;
+  outline: none;
+}
+/* line 342, _base.scss */
+.form .contact-form .wpcf7-not-valid-tip {
+  text-align: center;
+  display: block;
+  color: #896b4c;
+}
+
+/* line 365, _base.scss */
+.gallery {
+  clear: both;
+  padding-top: 30px;
+}
+/* line 369, _base.scss */
+.gallery .poleroid {
+  float: left;
+  width: 32%;
+}
+/* line 373, _base.scss */
+.gallery .poleroid.middle {
+  margin: 0 1%;
+}
+
+/* line 382, _base.scss */
+#hoursWrapper {
+  clear: both;
+  background: #896b4c;
+  padding: 25px 5%;
+}
+
+/* line 389, _base.scss */
+.hours {
+  color: #fffff2;
+  margin: 0 auto;
+}
+/* line 393, _base.scss */
+.hours p {
+  margin: 0;
+  /*this makes the paragraphs closer together*/
+}
+
+/* line 398, _base.scss */
+footer {
+  background: #a1c9d6;
+}
+/* line 402, _base.scss */
+footer a {
+  color: #3f525b;
+  font-weight: bold;
+}
+/* line 406, _base.scss */
+footer a:hover {
+  color: #3f525b;
+}
+/* line 410, _base.scss */
+footer a:active {
+  color: #3f525b;
+}
+/* line 414, _base.scss */
+footer a:visited {
+  color: #3f525b;
+}
+
+/* =============================================================================
+   								BLOG POSTS 
+   ========================================================================== */
